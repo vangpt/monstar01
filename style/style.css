@@ -114,11 +114,11 @@ ul,li{
 .subtitle{
     background-color: white;
     padding: 28px 0;
-
 }
 .subtitle div:first-child{
     color:#5f727f;
     font-size: 24px;
+    /* background-attachment: fixed; */
 }
 .subtitle div:last-child{
     color:#99a9b5;
