@@ -1,0 +1,169 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #cad3d3;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+ul,li{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+.container{
+}
+.tours{
+    width:100%;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding:118px 0 141px 0;
+}
+.item{
+    width: 362px;
+    max-width: 362px;
+    text-align: center;
+    position: relative;
+    /* padding-top:100px; */
+}
+.head{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top:-60px;
+    left: 121px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.head div:first-child{
+    font-size: 32px;
+}
+.head div:last-child{
+    margin-top: 5px;
+    color:#99a9b5
+}
+.tours .item:nth-child(1) .head div:first-child{
+    color:#2196f7;
+} 
+.tours .item:nth-child(2) .head{
+    background-color: black;
+}
+.tours .item:nth-child(2) .content .title .desc{
+    font-size: 14px;
+    color: #b6c6c9;
+    text-transform: none;
+    padding:10px;
+}
+.tours .item:nth-child(2) .head div:first-child{
+    color:#6c136f;
+} 
+.tours .item:nth-child(2) .new{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url('../images/newmark.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:-15px;
+    left:-15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.tours .item:nth-child(3) .head div:first-child{
+    color:#32ad1e;
+} 
+
+.title{
+    height: 275px;
+    color:#ffffff;
+    font-size: 36px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ocean{
+    background-image: url('../images/ocean.png'); 
+}
+.mountains{
+    background-image: url('../images/mountain.png');
+}
+.forest{
+    background-image: url('../images/forest.png');
+}
+.subtitle{
+    background-color: white;
+    padding: 28px 0;
+
+}
+.subtitle div:first-child{
+    color:#5f727f;
+    font-size: 24px;
+}
+.subtitle div:last-child{
+    color:#99a9b5;
+    font-size: 14px;
+}
+li{
+    color:#5f727f;
+    background-color: #f4f6f7;
+    padding: 25px;
+    text-align: center;
+}
+.bgr-none{
+    background-color: white;
+}
+button{
+    height: 50px;
+    width: 170px;
+    background-color:white;
+    color:#2196f7;
+    border:1px solid #2196f7;
+}
+.btnOcean{
+    background-color:white;
+    color:#2196f7;
+    border:1px solid #2196f7;
+}
+.btnMountains{
+    background-color:#6c136f;
+    color:white;
+}
+.btnForest{
+    background-color:white;
+    color:#32ad1e;
+    border:1px solid #32ad1e;
+}
+.foot{
+    background-color:#ffffff;
+    padding:50px 0;
+}
+
+@media (max-width: 1200px){
+    .tours{
+        justify-content: center;
+    }
+    .item{
+        margin-bottom: 150px;
+    }
+}
